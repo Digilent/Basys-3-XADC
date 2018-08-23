@@ -1,4 +1,4 @@
-Basys 3 General XADC  Demo
+Basys 3 XADC  Demo
 ==============
  [Link to the project wiki](https://reference.digilentinc.com/learn/programmable-logic/tutorials/basys-3-xadc/start)
 Introduction
