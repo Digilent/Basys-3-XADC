@@ -3,7 +3,7 @@ Basys 3 XADC  Demo
   
 Introduction
 --------------
-This project is a Verilog demo using the Basys 3, switches, LEDs and seven-segment display. When programmed onto the board, voltage levels between 0 and 1 Volt are read off of the JXADC header. The 16 User LEDs increment from right to left as the voltage difference on the selected XADC pins gets larger. The two seven-segment displays show the voltage difference on the AD6, AD7, AD14, AD15 pins in volts. SW0 and SW1 select which XADC channel is displayed. For photos of this demo in operation, check out it’s page on the Digilent Wiki.
+This project is a Verilog demo using the Basys 3, switches, LEDs and seven-segment display. When programmed onto the board, voltage levels between 0 and 1 Volt are read off of the JXADC header. The 16 User LEDs increment from right to left as the voltage difference on the selected XADC pins gets larger. The two seven-segment displays show the voltage difference on the AD6, AD7, AD14, AD15 pins in volts. SW0 and SW1 select which XADC channel is displayed. For photos of this demo in operation, check out it’s page on the [Digilent Wiki](https://reference.digilentinc.com/learn/programmable-logic/tutorials/basys-3-xadc/start).
  
  
 | Channel | SW0 position| SW1 position |
