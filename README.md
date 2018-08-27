@@ -1,25 +1,24 @@
-Basys 3 XADC  Demo
+Basys 3 XADC Demo
 ==============
   
-Introduction
+Description
 --------------
-This project is a Verilog demo using the Basys 3, switches, LEDs and seven-segment display. When programmed onto the board, voltage levels between 0 and 1 Volt are read off of the JXADC header. The 16 User LEDs increment from right to left as the voltage difference on the selected XADC pins gets larger. The two seven-segment displays show the voltage difference on the AD6, AD7, AD14, AD15 pins in volts. SW0 and SW1 select which XADC channel is displayed. For photos of this demo in operation, check out it’s page on the [Digilent Wiki](https://reference.digilentinc.com/learn/programmable-logic/tutorials/basys-3-xadc/start).
- 
- 
-| Channel | SW0 position| SW1 position |
-| ------- | ----------- | ------------ |
-| XA1     |    Down     |  Down        |
-| XA2     |    Up       |  Down        |
-| XA3     |    Down     |  Up          |
-| XA4     |    Up       |  Up          |
+This project is a Vivado demo using the Basys 3's analog-to-digital converter ciruitry, switches, LEDs, and seven-segment display, written in Verilog. When programmed onto the board, voltage levels between 0 and 1 Volt are read off of the JXADC header. The 16 User LEDs increment from right to left as the voltage difference between the selected channel's pins gets larger. The seven-segment display shows the voltage difference between the selected channel's pins in volts. SW0 and SW1 select which XADC channel is displayed, as shown in the table below. See the Basys 3's [Reference Manual](https://reference.digilentinc.com/reference/programmable-logic/basys-3/reference-manual) for more information about how the Artix 7 FPGA's XADC is connected to header JXADC.
+
+| XADC Channel | JXADC Pins             | SW0 Position | SW1 Position |
+| ------------ | ---------------------- | ------------ | ------------ |
+| AD6          | JXADC1(P) / JXADC7(N)  | Down         | Down         |
+| AD14         | JXADC2(P) / JXADC8(N)  | Up           | Down         |
+| AD7          | JXADC3(P) / JXADC9(N)  | Down         | Up           |
+| AD15         | JXADC4(P) / JXADC10(N) | Up           | Up           |
   
- Requirements
+Requirements
 --------------
 * **Basys 3**: To purchase a Basys 3, see the [Digilent Store](https://store.digilentinc.com/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/)
 * **Vivado 2018.2 Installation**: To learn how to get Vivado, see the [Installing Vivado and Digilent Board Files Tutorial](https://reference.digilentinc.com/vivado/installing-vivado/start).
 * **Serial Terminal Emulator**: For more information, see the [Installating and Using a Terminal Emulator Tutorial](https://reference.digilentinc.com/learn/programmable-logic/tutorials/tera-term).
 * **MicroUSB Cable**
-* **Wires and a voltage to measure**
+* **Wires and a circuit to measure**
 
 Demo Setup
 --------------
@@ -34,7 +33,11 @@ Demo Setup
 
 Next Steps
 --------------
-This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project. Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project.
+
+Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+
+If there are any issues with running this demo, contact Digilent Support through the FPGA section of the [Digilent Forum](https://forum.digilentinc.com).
 
 Additional Notes
 --------------
